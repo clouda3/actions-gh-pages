@@ -16,6 +16,8 @@ function skip() {
     exit 0
 }
 
+print_info "EXTERNAL_REPOSITORY:${EXTERNAL_REPOSITORY}"
+print_info "GITHUB_REPOSITORY:${GITHUB_REPOSITORY}"
 # check values
 if [ -n "${EXTERNAL_REPOSITORY}" ]; then
     PUBLISH_REPOSITORY=${EXTERNAL_REPOSITORY}
